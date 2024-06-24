@@ -14,8 +14,8 @@
     <!-- Intestazione Navbar-->
     <header class="top-header">
         <nav class="navbar bg-dark navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./img/duck.png" alt="" style="width: 50px;"></a>
+            <div class="container-fluid px-5">
+                <a class=" navbar-brand" href="#"><img src="./img/duck.png" alt="" style="width: 50px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -38,8 +38,9 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-light" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Cosa stai cercando.."
+                            aria-label="Search">
+                        <button class="btn btn-light" type="submit">Cerca</button>
                     </form>
                 </div>
             </div>
@@ -47,13 +48,117 @@
 
     </header>
 
-
-    <section>
+    <!--Sezione Contenuti-->
+    <section class="pt-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">col 1</div>
-                <div class="col-lg-4">col 2</div>
-                <div class="col">col 3</div>
+                <div class="col-8">
+                    <h2>Catalogo Libri</h2>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary">Aggiungi
+                        Libro</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Titolo</th>
+                                <th scope="col">Data Prestito</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col">Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">I Pilastri della Terra</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">I Promessi Sposi</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td>a</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Il Signore degli Anelli</th>
+                                <td>18/10/2023</td>
+                                <td><span class="badge text-bg-warning text-white">In Prestito</span></td>
+                                <td>@twitter</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Harry Potter e la Pietra Filosofale</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td>@twitter</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Il Codice da Vinci</th>
+                                <td>-</td>
+                                <td><span class="badge text-bg-danger text-white">Non Disponibile</span></td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--FAQ Component-->
+                <div class="col-lg-4">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Come Aggiungere un Nuovo Libro?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the first item's
+                                    accordion body.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Come posso accedere all'anagrafica Utenti?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the second item's
+                                    accordion body. Let's imagine this being filled with some actual content.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Posso usare questa dashboard da mobile?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                                    accordion body. Nothing more exciting happening here in terms of content, but just
+                                    filling up the space to make it look, at least at first glance, a bit more
+                                    representative of how this would look in a real-world application.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">col 3</div>
             </div>
         </div>
     </section>
